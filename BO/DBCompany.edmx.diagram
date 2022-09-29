@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="25aad03207624b279170fe0f907d34b7" Name="Diagram1">
+        <EntityTypeShape EntityType="INTECModel.ClientType" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="INTECModel.Company" Width="1.5" PointX="5.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="INTECModel.ContactType" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="INTECModel.Department" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="INTECModel.License" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="INTECModel.People" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="INTECModel.Permission" Width="1.5" PointX="8.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="INTECModel.Restriction" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="INTECModel.User" Width="1.5" PointX="8.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="INTECModel.UserPermissions" Width="1.5" PointX="10.5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="INTECModel.UserRestrictions" Width="1.5" PointX="10.5" PointY="1.875" IsExpanded="true" />
+        <AssociationConnector Association="INTECModel.FK_People_ClientType" ManuallyRouted="false" />
+        <AssociationConnector Association="INTECModel.FK_Company_People" ManuallyRouted="false" />
+        <AssociationConnector Association="INTECModel.FK_People_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="INTECModel.FK_People_ContactType" ManuallyRouted="false" />
+        <AssociationConnector Association="INTECModel.FK_People_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="INTECModel.FK_User_License" ManuallyRouted="false" />
+        <AssociationConnector Association="INTECModel.FK_User_People" ManuallyRouted="false" />
+        <AssociationConnector Association="INTECModel.FK_UserPermissions_Permission" ManuallyRouted="false" />
+        <AssociationConnector Association="INTECModel.FK_UserRestrictions_Restriction" ManuallyRouted="false" />
+        <AssociationConnector Association="INTECModel.FK_UserPermissions_User" ManuallyRouted="false" />
+        <AssociationConnector Association="INTECModel.FK_UserRestrictions_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
